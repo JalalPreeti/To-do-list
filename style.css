@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.input-container h1 {
+    color: #1a1a1a;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#inputBox {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+#inputBox:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+#addBtn {
+    padding: 1rem 2rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#addBtn:hover {
+    background: #5a6fd6;
+    transform: translateY(-1px);
+}
+
+#addBtn:active {
+    transform: translateY(0);
+}
+
+.todoList {
+    list-style: none;
+    width: 100%;
+}
+
+.todoList li {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.todoList li:hover {
+    transform: translateX(5px);
+    border-color: #667eea;
+}
+
+.todoList li p {
+    flex: 1;
+    color: #4b5563;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    font-size: 0.875rem;
+}
+
+.editBtn {
+    color: #059669;
+    background: #ecfdf5;
+}
+
+.editBtn:hover {
+    background: #d1fae5;
+}
+
+.deleteBtn {
+    color: #dc2626;
+    background: #fef2f2;
+}
+
+.deleteBtn:hover {
+    background: #fee2e2;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .input-container h1 {
+        font-size: 2rem;
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+    }
+
+    #addBtn {
+        width: 100%;
+    }
+}
